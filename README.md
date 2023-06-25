@@ -1,4 +1,4 @@
-# Stenciljs VueIntegration Demo
+# Stenciljs Vue Integration Demo
 
 This is a demo of the Stencil Js Vue integration walkthrough shown at [https://stenciljs.com/docs/vue](https://stenciljs.com/docs/vue)
 
