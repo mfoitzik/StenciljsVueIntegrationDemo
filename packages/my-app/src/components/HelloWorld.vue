@@ -10,10 +10,7 @@ defineProps<{
     
     <h1 class="green">{{ msg }}</h1>
     <p>
-      Test MikeX
-    </p>
-    <p>
-      <my-component first="Michael" last="Foitzik"></my-component>
+      <my-component first="Sally" last="Smith"></my-component>
     </p>
     <h3>
       You’ve successfully created a project with
