@@ -4,14 +4,14 @@ export default {
   input: 'dist-transpiled/index.js',
   output: [
     {
-      dir: 'dist2/',
+      dir: 'dist/',
       entryFileNames: '[name].esm.js',
       chunkFileNames: '[name]-[hash].esm.js',
       format: 'es',
       sourcemap: true,
     },
     {
-      dir: 'dist3/',
+      dir: 'dist/',
       format: 'commonjs',
       generatedCode: {constBindings: true},
       sourcemap: true,
