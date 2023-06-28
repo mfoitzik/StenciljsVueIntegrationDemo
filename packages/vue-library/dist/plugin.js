@@ -1,4 +1,4 @@
-import { applyPolyfills, defineCustomElements } from 'stencil-library/loader';
+import { applyPolyfills, defineCustomElements } from '@mifotest/stencil-library/loader';
 export const ComponentLibrary = {
     async install() {
         applyPolyfills().then(() => {
