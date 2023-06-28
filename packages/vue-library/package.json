@@ -16,7 +16,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "build": "npm run tsc",
+    "build": "npm run tsc &&  npm run bundle",
+    "bundle": "rollup --config rollup.config.mjs",
     "tsc": "tsc -p ."
   },
   "publishConfig": {
@@ -25,5 +26,9 @@
   "dependencies": {
     "@mifotest/stencil-library": "^0.0.7"
   },
-  "gitHead": "0d29727ca8b77a287c3223374575c78858d65c53"
+  "gitHead": "0d29727ca8b77a287c3223374575c78858d65c53",
+  "devDependencies": {
+    "rimraf": "^5.0.1",
+    "rollup": "^3.25.3"
+  }
 }

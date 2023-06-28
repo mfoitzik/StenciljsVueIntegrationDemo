@@ -1,7 +1,5 @@
-'use strict';
-
-const vue = require('vue');
-const loader = require('@mifotest/stencil-library/loader');
+import { defineComponent, ref, getCurrentInstance, inject, h } from 'vue';
+import { applyPolyfills, defineCustomElements } from '@mifotest/stencil-library/loader';
 
 const UPDATE_VALUE_EVENT = 'update:modelValue';
 const MODEL_VALUE = 'modelValue';
@@ -22,10 +20,10 @@ const defineContainer = (name, defineCustomElement, componentProps = [], modelPr
     if (defineCustomElement !== undefined) {
         defineCustomElement();
     }
-    const Container = vue.defineComponent((props, { attrs, slots, emit }) => {
+    const Container = defineComponent((props, { attrs, slots, emit }) => {
         var _a;
         let modelPropValue = props[modelProp];
-        const containerRef = vue.ref();
+        const containerRef = ref();
         const classes = new Set(getComponentClasses(attrs.class));
         const onVnodeBeforeMount = (vnode) => {
             if (vnode.el) {
@@ -41,9 +39,9 @@ const defineContainer = (name, defineCustomElement, componentProps = [], modelPr
                 });
             }
         };
-        const currentInstance = vue.getCurrentInstance();
+        const currentInstance = getCurrentInstance();
         const hasRouter = (_a = currentInstance === null || currentInstance === void 0 ? void 0 : currentInstance.appContext) === null || _a === void 0 ? void 0 : _a.provides[NAV_MANAGER];
-        const navManager = hasRouter ? vue.inject(NAV_MANAGER) : undefined;
+        const navManager = hasRouter ? inject(NAV_MANAGER) : undefined;
         const handleRouterLink = (ev) => {
             const { routerLink } = props;
             if (routerLink === EMPTY_PROP)
@@ -96,7 +94,7 @@ const defineContainer = (name, defineCustomElement, componentProps = [], modelPr
                     propsToAdd = Object.assign(Object.assign({}, propsToAdd), { [modelProp]: modelPropValue });
                 }
             }
-            return vue.h(name, propsToAdd, slots.default && slots.default());
+            return h(name, propsToAdd, slots.default && slots.default());
         };
     });
     if (typeof Container !== 'function') {
@@ -123,12 +121,11 @@ const MyComponent = defineContainer('my-component', undefined, [
 
 const ComponentLibrary = {
     async install() {
-        loader.applyPolyfills().then(() => {
-            loader.defineCustomElements();
+        applyPolyfills().then(() => {
+            defineCustomElements();
         });
     },
 };
 
-exports.ComponentLibrary = ComponentLibrary;
-exports.MyComponent = MyComponent;
-//# sourceMappingURL=index.js.map
+export { ComponentLibrary, MyComponent };
+//# sourceMappingURL=index.esm.js.map
