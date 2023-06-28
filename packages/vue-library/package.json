@@ -1,6 +1,6 @@
 {
   "name": "@mfoitzik/vue-library",
-  "version": "1.0.4",
+  "version": "0.0.1",
   "description": "Test vue plugin",
   "author": "Mike Foitzik <mike@mifo.com>",
   "homepage": "",
@@ -16,13 +16,13 @@
   ],
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-  "build": "npm run tsc",
+    "build": "npm run tsc",
     "tsc": "tsc -p ."
   },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@mfoitzik/stencil-library": "*"
+    "@mfoitzik/stencil-library": "^0.0.1"
   }
 }
