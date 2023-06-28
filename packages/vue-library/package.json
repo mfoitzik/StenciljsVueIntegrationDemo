@@ -23,7 +23,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@mifotest/stencil-library": "^0.0.2"
+    "stencil-library": "*"
   },
-  "gitHead": "bdb605ac92125f850e630f297cb6f070e3fa09d5"
+  "gitHead": "e076359d65e34f48927ddcf5c5e271a132449d14"
 }
