@@ -7,9 +7,11 @@ export const config: Config = {
     {
       type: 'dist',
       esmLoaderPath: '../loader',
+      collectionDir: 'collection',
     },
     {
       type: 'dist-custom-elements',
+      generateTypeDeclarations: true,
     },
     {
       type: 'docs-readme',

@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "vue": "^3.3.4",
-    "vue-library": "*"
+    "@mfoitzik/vue-library": "*"
   },
   "devDependencies": {
     "@tsconfig/node18": "^2.0.1",

@@ -1,12 +1,12 @@
 {
-  "name": "vue-library",
-  "version": "0.0.0",
-  "description": "> TODO: description",
+  "name": "@mfoitzik/vue-library",
+  "version": "1.0.4",
+  "description": "Test vue plugin",
   "author": "Mike Foitzik <mike@mifo.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "dist/components.js",
-  "types": "dist/components.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -23,6 +23,6 @@
     "access": "public"
   },
   "dependencies": {
-    "stencil-library": "*"
+    "@mfoitzik/stencil-library": "*"
   }
 }
