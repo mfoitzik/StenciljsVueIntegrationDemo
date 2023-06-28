@@ -26,7 +26,6 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@mifotest/vue-library": "^0.0.4",
     "@stencil/core": "^3.0.0"
   },
   "devDependencies": {
@@ -38,5 +37,5 @@
     "puppeteer": "^19.5.2"
   },
   "license": "MIT",
-  "gitHead": "e076359d65e34f48927ddcf5c5e271a132449d14"
+  "gitHead": "f12bc5673662a705385346b7e15c7e76cff62964"
 }
