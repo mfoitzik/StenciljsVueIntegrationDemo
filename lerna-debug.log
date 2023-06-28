@@ -1,0 +1,11 @@
+43 error Error: Command failed with exit code 1: npm install --package-lock-only --ignore-scripts
+43 error npm ERR! code ENOVERSIONS
+43 error npm ERR! No versions available for stencil-library
+43 error
+43 error npm ERR! A complete log of this run can be found in:
+43 error npm ERR!     C:\Users\mike\AppData\Local\npm-cache\_logs\2023-06-28T15_50_41_404Z-debug-0.log
+43 error     at makeError (D:\MikeOldComputer\Work\SourceControlledProjects\StenciljsVueIntegrationDemo\node_modules\execa\lib\error.js:59:11)
+43 error     at handlePromise (D:\MikeOldComputer\Work\SourceControlledProjects\StenciljsVueIntegrationDemo\node_modules\execa\index.js:114:26)
+43 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+43 error     at async VersionCommand.updatePackageVersions (D:\MikeOldComputer\Work\SourceControlledProjects\StenciljsVueIntegrationDemo\node_modules\lerna\dist\index.js:8264:13)
+43 error     at async Promise.all (index 0)
