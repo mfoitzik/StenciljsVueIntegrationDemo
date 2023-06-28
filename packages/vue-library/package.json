@@ -1,5 +1,5 @@
 {
-  "name": "@mfoitzik/vue-library",
+  "name": "@mifotest/vue-library",
   "version": "0.0.1",
   "description": "Test vue plugin",
   "author": "Mike Foitzik <mike@mifo.com>",
@@ -23,6 +23,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@mfoitzik/stencil-library": "^0.0.1"
-  }
+    "@mifotest/stencil-library": "^0.0.1"
+  },
+  "gitHead": "bdb605ac92125f850e630f297cb6f070e3fa09d5"
 }

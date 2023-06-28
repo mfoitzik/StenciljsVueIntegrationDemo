@@ -1,5 +1,5 @@
 {
-  "name": "@mfoitzik/stencil-library",
+  "name": "@mifotest/stencil-library",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@stencil/core": "^3.0.0",
-    "vue-library": "*"
+    "@mifotest/vue-library": "*"
   },
   "devDependencies": {
     "@stencil/vue-output-target": "^0.8.6",
@@ -37,5 +37,6 @@
     "jest-cli": "^27.5.1",
     "puppeteer": "^19.5.2"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "bdb605ac92125f850e630f297cb6f070e3fa09d5"
 }
