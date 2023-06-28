@@ -1,6 +1,6 @@
 {
   "name": "@mifotest/stencil-library",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -26,8 +26,8 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@stencil/core": "^3.0.0",
-    "@mifotest/vue-library": "*"
+    "@mifotest/vue-library": "^0.0.4",
+    "@stencil/core": "^3.0.0"
   },
   "devDependencies": {
     "@stencil/vue-output-target": "^0.8.6",

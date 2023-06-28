@@ -1,6 +1,6 @@
 {
   "name": "@mifotest/vue-library",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Test vue plugin",
   "author": "Mike Foitzik <mike@mifo.com>",
   "homepage": "",
@@ -23,7 +23,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@mifotest/stencil-library": "*"
+    "@mifotest/stencil-library": "^0.0.4"
   },
   "gitHead": "e076359d65e34f48927ddcf5c5e271a132449d14"
 }
