@@ -1,7 +1,7 @@
 const external = ['vue', 'vue-router'];
 
 export default {
-  input: 'dist/index.js',
+  input: 'dist-transpiled/index.js',
   output: [
     {
       dir: 'dist/',

@@ -16,8 +16,9 @@
   ],
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "build": "npm run tsc &&  npm run bundle",
-    "bundle": "rollup --config rollup.config.mjs",
+    "build": "npm run clean && npm run tsc &&  npm run bundle",
+    "bundle": "rollup --config --bundleConfigAsCjs rollup.config.js",
+    "clean": "rimraf dist dist-transpiled",
     "tsc": "tsc -p ."
   },
   "publishConfig": {
