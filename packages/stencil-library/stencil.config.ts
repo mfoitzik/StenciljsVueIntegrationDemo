@@ -23,6 +23,7 @@ export const config: Config = {
     vueOutputTarget({
       componentCorePackage: '@mifotest/stencil-library',
       proxiesFile: '../vue-library/lib/components.ts',
+      includeImportCustomElements: true
     }),
   ],
 };

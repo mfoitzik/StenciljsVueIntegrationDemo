@@ -1,6 +1,7 @@
 'use strict';
 
 const vue = require('vue');
+const dist = require('@mifotest/stencil-library/dist');
 const loader = require('@mifotest/stencil-library/loader');
 
 const UPDATE_VALUE_EVENT = 'update:modelValue';
@@ -115,7 +116,7 @@ const defineContainer = (name, defineCustomElement, componentProps = [], modelPr
     return Container;
 };
 
-const MyComponent = defineContainer('my-component', undefined, [
+const MyComponent = defineContainer('my-component', dist.defineCustomElement, [
     'first',
     'middle',
     'last'
