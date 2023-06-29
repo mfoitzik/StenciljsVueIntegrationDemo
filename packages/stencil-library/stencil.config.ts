@@ -11,10 +11,11 @@ export const config: Config = {
     {
       type: 'dist',
       esmLoaderPath: '../loader',
+      collectionDir: 'collection',
     },
     vueOutputTarget({
-      componentCorePackage: 'stencil-library',
-      proxiesFile: '../vue-library/lib/components.ts',
+      componentCorePackage: '@mifotest/stencil-library',
+      proxiesFile: '../vue-library/lib/components.ts'
     }),
   ],
 };
