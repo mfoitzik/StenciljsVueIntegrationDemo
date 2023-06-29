@@ -3,12 +3,12 @@
 /* auto-generated vue proxies */
 import { defineContainer } from './vue-component-lib/utils';
 
-import type { JSX } from '@mifotest/stencil-library/dist';
-
-import { defineCustomElement as defineMyComponent } from '@mifotest/stencil-library/dist';
+import type { JSX } from 'stencil-library';
 
 
-export const MyComponent = /*@__PURE__*/ defineContainer<JSX.MyComponent>('my-component', defineMyComponent, [
+
+
+export const MyComponent = /*@__PURE__*/ defineContainer<JSX.MyComponent>('my-component', undefined, [
   'first',
   'middle',
   'last'

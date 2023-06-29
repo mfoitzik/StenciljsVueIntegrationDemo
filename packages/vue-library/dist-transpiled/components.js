@@ -1,6 +1,5 @@
 import { defineContainer } from './vue-component-lib/utils';
-import { defineCustomElement as defineMyComponent } from '@mifotest/stencil-library/dist';
-export const MyComponent = defineContainer('my-component', defineMyComponent, [
+export const MyComponent = defineContainer('my-component', undefined, [
     'first',
     'middle',
     'last'
