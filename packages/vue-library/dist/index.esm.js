@@ -1,4 +1,5 @@
 import { defineComponent, ref, getCurrentInstance, inject, h } from 'vue';
+import { defineCustomElement } from '@mifotest/stencil-library/dist/components/my-component.js';
 import { applyPolyfills, defineCustomElements } from '@mifotest/stencil-library/loader';
 
 const UPDATE_VALUE_EVENT = 'update:modelValue';
@@ -113,7 +114,7 @@ const defineContainer = (name, defineCustomElement, componentProps = [], modelPr
     return Container;
 };
 
-const MyComponent = defineContainer('my-component', undefined, [
+const MyComponent = defineContainer('my-component', defineCustomElement, [
     'first',
     'middle',
     'last'
